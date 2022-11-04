@@ -4812,8 +4812,8 @@ function library:CreateSettingsTab(menu)
         setclipboard(([[Roblox.GameLauncher.joinGameInstance(%s, "%s"))]]):format(game.PlaceId, game.JobId))
     end})
 
-    mainSection:AddButton({text = 'Unload', confirm = true, callback = function()
-        library:Unload(); espLib:Unload()
+    mainSection:AddButton({text = 'Unload', confirm = true, callback = function(Value)
+        library:Unload(); espLib:Unload() 
     end})
 
     mainSection:AddSeparator({text = 'Keybinds'});
