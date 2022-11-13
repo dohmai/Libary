@@ -4813,7 +4813,11 @@ function library:CreateSettingsTab(menu)
     end})
 
     mainSection:AddButton({text = 'Unload', confirm = true, callback = function(Value)
-        library:Unload(); espLib:Unload(); 
+        library:Unload()
+    end})
+
+    mainSection:AddButton({text = 'Unload ESP', confirm = true, callback = function(Value)
+        espLib:Unload()
     end})
 
     mainSection:AddSeparator({text = 'Keybinds'});
