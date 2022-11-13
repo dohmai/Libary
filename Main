@@ -4816,10 +4816,6 @@ function library:CreateSettingsTab(menu)
         library:Unload()
     end})
 
-    mainSection:AddButton({text = 'Unload ESP', confirm = true, callback = function(Value)
-        espLib:Unload()
-    end})
-
     mainSection:AddSeparator({text = 'Keybinds'});
     mainSection:AddToggle({text = 'Keybind Indicator', flag = 'keybind_indicator', state = false, callback = function(bool)
         library.keyIndicator:SetEnabled(bool);
